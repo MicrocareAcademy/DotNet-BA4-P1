@@ -1,0 +1,17 @@
+﻿@model AcademyWeb.Models.Student
+@{
+    Layout = "_Layout";
+}
+
+<div class="row">
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            @Model.StudentName
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">@Model.Course</li>
+            <li class="list-group-item">@Model.StudentEmail</li>
+            <li class="list-group-item">@Model.StudentPhone</li>
+        </ul>
+    </div>
+</div>
